@@ -19,8 +19,9 @@ public class PooledDatabaseConnection {
                 if (rs.next()) {
                     System.out.println(rs.getString(1));
                 }
-            } else {
-                System.out.println("Connection failed");
+            } 
+            else {
+                System.out.println("Connect failed again");
             }
         } catch (Exception e) {
             System.out.println(e);
